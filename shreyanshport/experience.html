@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #f4f8f8;
+            background-color: #f4f4f4;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(34, 10, 211, 0.756);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .heading-text {
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #fec509; /* changed text color to black */
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .experience-list {
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Add styles for the video background */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .experience-content {
+            margin-bottom: 15px;
+        }
+
+        .experience-content a {
+            text-decoration: none;
+            color: #febd09; /* changed text color to black */
+        }
+
+        .experience-content a:hover {
+            text-decoration: underline;
+            color: #0dc7d4; /* added hover effect */
+        }
+
+        .experience-content h2 {
+            margin-top: 0;
+        }
+
+        .experience-content h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-content p {
+            margin: 0;
+            margin-bottom: 3px;
+        }
+
+        .experience-content ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .experience-content li {
+            margin-bottom: 3px;
+        }
+        .main-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 10px;
+    }
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+  color: white;
+  padding-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffbf35;
+  text-shadow: 0 0 10px #ffbf35;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .image-container,
+      .text-container {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+    nav a {
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-size: 100% 200px;
+  background-position: 0% 100%;
+  transition: background-position 0.3s ease-in-out;
+  z-index: -1;
+}
+
+nav a:hover::before {
+  background-position: 100% 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-panel">
+        <div class="container">
+          
+          <div class="width-66">
+            <nav>
+              <a href="index.html">
+                <span class="span-col">Home</span>
+              </a>
+              <a href="about.html">About me</a>
+              <a href="experience.html">Experience</a>
+              <a href="service.html">My Services</a>
+              <a href="skill.html">Skills</a>
+              <a href="#">Certificate</a>
+              <a href="#">Achievements</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    <video autoplay muted loop id="background-video">
+        <source src="video/experience.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="edu-exp">
+            <h2 class="heading-text">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-content">
+                    <a href="images/internpe.jpeg" target="_blank">
+                        <h2>Engineer Intern</h2>
+                    </a>
+                    <h3>Feb 2024 - Feb 2024 · 1 mo</h3>
+                    <p>InternPe · Internship</p>
+                    <p>Virtual · Remote with AI and ML</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Developed AI and ML projects individually</li>
+                        <li>Designed and implemented new features individually</li>
+                        <li>Performed manual testing to ensure high-quality code</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-list">
+                <div class="experience-content">
+                    <a href="images/technohack.jpeg" target="_blank">
+                        <h2>Student Intern</h2>
+                    </a>
+                    <h3>Feb 2024 - Feb 2024 · 1 mo</h3>
+                    <p>TechnoHacks EduTech Official · Internship</p>
+                    <p>India · Remote</p>
+                    <p>Cybersecurity, Advance software engineering job simulation</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Simulated cybersecurity attacks and developed countermeasures to prevent them individually</li>
+                        <li>Designed and implemented software applications using advanced software engineering practices</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-list">
+                <div class="experience-content">
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Walmart%20USA/oX6f9BbCL9kJDJzfg_Walmart%20USA_cShh8ZeoSXfA28oAh_1706448018496_completion_certificate.pdf" target="_blank">
+                        <h2>Advance software engineering job simulation</h2>
+                    </a>
+                    <h3>Jan 2024 - Jan 2024 · 1 mo</h3>
+                    <p>Walmart Global Tech India · Internship</p>
+                    <p>India · Remote</p>
+                    <p>Skills: Software Engineering Practices, Cybersecurity job simulation</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Completed the Advanced Software Engineering Job Simulation where I solved
+                            difficult technical projects for a variety of teams at Walmart.
+                         </li>
+                        <li>Designed and implemented software solutions individually</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-list">
+                <div class="experience-content">
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mastercard/vcKAB5yYAgvemepGQ_Mastercard_cShh8ZeoSXfA28oAh_1706445058832_completion_certificate.pdf" target="_blank">
+                        <h2>Cybersecurity job simulation</h2>
+                    </a>
+                    <h3>Jan 2024 - Jan 2024 · 1 mo</h3>
+                    <p>Mastercard · Internship</p>
+                    <p>India · Remote</p>
+                    <p>Skills: Cybersecurity, Project management job simulation</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Analyzed and identified which areas of the business needed more robust
+                            security training and implemented training courses and procedures for those
+                            teams.</li>
+                        <li> Completed a job simulation where I served as an analyst on Mastercard’s
+                            Security Awareness Team.
+                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-list">
+                <div class="experience-content">
+                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/tHFz7Bfjmh35DXQv6_Accenture%20North%20America_cShh8ZeoSXfA28oAh_1706453934413_completion_certificate.pdf" target="_blank">
+                        <h2>Project management job simulation</h2>
+                    </a>
+                    <h3>Jan 2024 - Jan 2024 · 1 mo</h3>
+                    <p>ACCENTURE · Internship</p>
+                    <p>India · Remote</p>
+                    <p>Skills: Project Management, AI and ML job simulation</p>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Mapped suitable project management approaches including Plan Driven, Agile,
+                            Second Agile and Hybrid to a portfolio of projects.
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.experience-list').forEach((item, index) => {
+            setTimeout(() => {
+                item.style.animationDelay = `${index * 0.1}s`;
+                item.classList.add('fadeIn');
+            }, 300);
+        });
+    </script>
+</body>
+</html>
